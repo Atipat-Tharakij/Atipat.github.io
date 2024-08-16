@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #9CDBA6; /* สีพื้นหลังของหน้าเว็บ */
+    color: rgb(0, 0, 0); /* สีตัวอักษร */
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #50B498; /* สีพื้นหลังของแถบเมนู */
+    overflow: hidden;
+    margin-bottom: 50px; /* เพิ่มช่องว่างด้านล่างของแถบเมนู */
+    position: -webkit-sticky; /* สำหรับเบราว์เซอร์ที่ใช้ Webkit */
+    position: sticky; /* ทำให้แถบเมนูเป็น sticky */
+    top: 0; /* ติดที่ด้านบนของหน้า */
+    z-index: 1000; /* ทำให้แถบเมนูอยู่เหนือเนื้อหาอื่น */
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* จัดรายการไปทางขวา */
+    list-style-type: none; /* ลบจุดหน้าไอเท็มในรายการ */
+    margin: 0;
+    padding: 14px;
+}
+
+nav ul li {
+    margin: 0 15px; /* ระยะห่างระหว่างไอเท็มในเมนู */
+}
+
+nav ul li a {
+    color: black; /* สีของลิงก์ในเมนู */
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-weight: bold; /* เพิ่มความหนาให้ลิงก์เพื่อให้เด่น */
+    
+}
+
+nav ul li a:hover {
+    background-color: mediumaquamarine;
+    text-decoration: underline; /* เพิ่มเส้นใต้เมื่อชี้ลิงก์ */
+}
+
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background-color: #DEF9C4; /* สีพื้นหลังรวมสำหรับกล่องข้อมูล */
+    border-radius: 20px; /* มุมมนของกล่อง */
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กับกล่อง */
+    max-width: 1000px; /* จำกัดความกว้างของกล่อง */
+    margin: 20px auto; /* เพิ่มช่องว่างรอบกล่องและจัดให้อยู่กลาง */
+}
+
+.contact-us-container h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-align: center;
+    color: #333; /* สีตัวอักษรที่มืดเพื่อให้ตรงกับพื้นหลังขาว */
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px; /* ระยะห่างระหว่างแผนที่และข้อมูลการติดต่อ */
+}
+
+.left, .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-radius: 10px; /* มุมมนของกล่อง */
+    background-color: #DEF9C4; /* สีพื้นหลังของกล่องแผนที่และข้อมูลการติดต่อ */
+}
+
+.left {
+    position: relative; /* ทำให้ตำแหน่งของ .map-label ใช้การกำหนดตำแหน่ง absolute */
+    background-color: #DEF9C4; /* สีพื้นหลังของแผนที่ */
+}
+
+.left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* มุมมนให้กับภาพ */
+    margin-top: 400px;
+}
+
+.map-label {
+    position: absolute;
+    top: 420px; /* ระยะห่างจากด้านบนของ .left */
+    left: 20px; /* ระยะห่างจากด้านซ้ายของ .left */
+    background-color: rgba(0, 0, 0, 0.5); /* พื้นหลังของข้อความเป็นสีดำโปร่งแสง */
+    color: black; /* สีของข้อความ */
+    padding: 5px 10px; /* ช่องว่างรอบข้อความ */
+    border-radius: 5px; /* มุมมนของพื้นหลังข้อความ */
+    font-size: 18px; /* ขนาดตัวอักษร */
+    font-weight: bold; /* ทำให้ตัวอักษรหนาขึ้น */
+}
+
+.right {
+    text-align: left;
+}
+
+.contact-us-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us-info div {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 20px;
+    color: #333; /* สีของข้อความ */
+}
+
+.contact-us-info img {
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.contact-us-info a {
+    color: black; /* สีของลิงก์ */
+    text-decoration: none;
+}
+
+.contact-us-info a:hover {
+    text-decoration: underline; /* เพิ่มเส้นใต้เมื่อชี้ลิงก์ */
+}
+
+.user-image img {
+    width: 300px; /* กำหนดขนาดความกว้างใหม่ */
+    height: 300px; /* กำหนดขนาดความสูงใหม่ */
+}

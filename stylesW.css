@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-image: url('images/galaxy.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgba(20, 20, 20, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 50%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ffffff;
+    padding: 5px;
+    border: 3px solid #3C6A8B;
+}
+
+.welcome-bar {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2B4D64;
+    color: #E0E0E0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 36px;
+    color: #ffffff;
+    font-family: 'Merriweather', serif; 
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #3C6A8B;
+    padding: 15px 30px;
+    margin: 10px 0;
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 20px; 
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #2B4D64;
+    transform: translateY(-2px);
+}

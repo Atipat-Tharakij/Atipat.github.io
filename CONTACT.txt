@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesC.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="file:///C:/Users/Atipat%20Tharakij/Desktop/work/Home.html">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="file:///C:/Users/Atipat%20Tharakij/Desktop/work/Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="contact-us-container">
+        <h1>CONTACT ME</h1>
+        <div class="contact-content">
+            <div class="right">
+                <div class="contact-us-info">
+                    <div class="user-image"><img src="C:\Users\Atipat Tharakij\Pictures\test.png" alt="User"></div>
+                    <div><img src="C:\Users\Atipat Tharakij\Pictures\user.png" alt="User Icon">Atipat Tharakij</div>
+                    <div><img src="C:\Users\Atipat Tharakij\Pictures\location.png" alt="Address">35/6 Moo 11 Nong o Banpong Ratchaburi 70110</div>
+                    <div><img src="C:\Users\Atipat Tharakij\Pictures\phone.png" alt="Phone Icon">094-225-5359</div>
+                    <div><img src="C:\Users\Atipat Tharakij\Pictures\email.png" alt="Email Icon">tharakij_a@silpakorn.edu</div>
+                    <div><img src="C:\Users\Atipat Tharakij\Pictures\facebook.png" alt="Facebook Icon"><a href="https://facebook.com/atipat.tharakij" target="_blank">Atipat TK </a></div>
+                    <div><img src="C:\Users\Atipat Tharakij\Pictures\line.png" alt="LINE Icon">@beam03tk</div>
+                </div>
+            </div>
+            <div class="left">
+                <a href="https://www.google.co.th/maps/place/13%C2%B047'11.5%22N+99%C2%B055'41.2%22E/@13.7865342,99.9232511,17z/data=!3m1!4b1!4m7!1m2!2m1!1zMzUvNiDguKvguKHguLnguYgxMSDguJXguLPguJrguKXguKvguJnguK3guIfguK3guYnguK0g!3m3!8m2!3d13.786529!4d99.928122?hl=th&entry=ttu" target="_blank">
+                    <img src="C:\Users\Atipat Tharakij\Pictures\map.png" alt="map">
+                    <span class="map-label">Map</span> 
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

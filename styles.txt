@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* กำหนดภาพพื้นหลัง */
+    background-size: cover; /* ทำให้ภาพครอบคลุมทั้งหน้า */
+    background-position: center; /* จัดตำแหน่งภาพให้อยู่ตรงกลาง */
+    background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+}
+
+nav {
+    background-color: #50B498; /* สีพื้นหลังของแถบเมนู */
+    overflow: hidden;
+    margin-bottom: 50px; /* เพิ่มช่องว่างด้านล่างของแถบเมนู */
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* จัดรายการไปทางขวา */
+    list-style-type: none; /* ลบจุดหน้าไอเท็มในรายการ */
+    margin: 0;
+    padding: 14px;
+}
+
+nav ul li {
+    margin: 0 15px; /* ระยะห่างระหว่างไอเท็มในเมนู */
+}
+
+nav ul li a {
+    color: black; /* สีของลิงก์ในเมนู */
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-weight: bold; /* เพิ่มความหนาให้ลิงก์เพื่อให้เด่น */
+}
+
+nav ul li a:hover {
+    background-color: mediumaquamarine;
+    text-decoration: underline; /* เพิ่มเส้นใต้เมื่อชี้ลิงก์ */
+}
