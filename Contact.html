@@ -6,9 +6,32 @@
     <title>Contact Us</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesC.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <style>
+      .contact-us-info div {
+        transition: transform 0.3s ease, color 0.3s ease;
+      }
+      .contact-us-info div:hover {
+        transform: translateX(6px);
+        color: #4656C4;
+      }
+      .user-image img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .user-image img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+      }
+      .left a img {
+        transition: transform 0.3s ease;
+      }
+      .left a:hover img {
+        transform: scale(1.05);
+      }
+    </style>
 </head>
 <body>
-    <nav>
+    <nav data-aos="fade-down">
         <ul>
             <li><a href="Home.html">Home</a></li>
             <li><a href="Experience.html">Experience</a></li>
@@ -17,9 +40,9 @@
         </ul>
     </nav>
     <div class="contact-us-container">
-        <h1>CONTACT ME</h1>
+        <h1 data-aos="fade-right">CONTACT ME</h1>
         <div class="contact-content">
-            <div class="right">
+            <div class="right" data-aos="fade-up">
                 <div class="contact-us-info">
                     <div class="user-image"><img src="images/me.jpg" alt="User"></div>
                     <div><img src="images/user.png" alt="User Icon">Atipat Tharakij</div>
@@ -30,7 +53,7 @@
                     <div><img src="images/line.png" alt="LINE Icon">@beam03tk</div>
                 </div>
             </div>
-            <div class="left">
+            <div class="left" data-aos="zoom-in">
                 <a href="https://www.google.co.th/maps/place/13%C2%B047'11.5%22N+99%C2%B055'41.2%22E/@13.7865342,99.9232511,17z/data=!3m1!4b1!4m7!1m2!2m1!1zMzUvNiDguKvguKHguLnguYgxMSDguJXguLPguJrguKXguKvguJnguK3guIfguK3guYnguK0g!3m3!8m2!3d13.786529!4d99.928122?hl=th&entry=ttu" target="_blank">
                     <img src="images/map.png" alt="map">
                     <span class="map-label">Map</span> 
@@ -38,5 +61,9 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

@@ -67,10 +67,16 @@ main {
 
 .image-container img {
     margin-left: 1rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: auto;
     height: 500px;
     border-radius: 10px; 
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 #home {
@@ -81,7 +87,7 @@ main {
 
 .about-me {
     background-color: #B0C4DE; 
-    height: 880px;
+    height: 1000px;
     padding: 2rem; 
     border-radius: 10px;
     grid-column: 2; 
@@ -133,6 +139,7 @@ main {
 
 .skill-bar {
     background-color: #D2E0FB; 
+    transition: width 1s ease-in-out;
     border-radius: 5px;
     overflow: hidden;
     height: 1.5rem;
@@ -146,7 +153,7 @@ main {
 }
 
 .html {
-    width: 70%; 
+    width: 60%; 
 }
 
 .css {
@@ -158,36 +165,33 @@ main {
 }
 
 .php {
-    width: 55%;
+    width: 20%;
 }
 
 .python {
-    width: 80%;
-}
-
-.java {
     width: 50%;
 }
 
+.java {
+    width: 30%;
+}
+
 .assembly {
-    width: 70%;
+    width: 40%;
 }
 
 .arduino {
-    width: 60%;
+    width: 30%;
 }
 
 .c {
-    width: 55%;
+    width: 40%;
 }
 
 .Bootstrap {
-    width: 30%;
+    width: 20%;
 }
 
-.php {
-    width: 30%;
-}
 .projects {
     background-color: white; 
     padding: 2rem;

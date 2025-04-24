@@ -6,9 +6,22 @@
     <title>Resume</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <style>
+        .skill-bar {
+            transition: width 1s ease-in-out;
+        }
+        .image-container img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
-    <nav>
+    <nav data-aos="fade-down">
         <ul>
             <li><a href="Home.html">Home</a></li>
             <li><a href="Experience.html">Experience</a></li>
@@ -18,12 +31,12 @@
     </nav>
     <main>
         <section id="home">
-            <div class="image-container">
+            <div class="image-container" data-aos="zoom-in">
                 <img src="images/me3.jpg" alt="Landscape">
             </div>
-            <div class="about-me">
+            <div class="about-me" data-aos="fade-up">
                 <div class="about-me-info">
-                    <h2>About Me</h2>
+                    <h1 data-aos="fade-right">About Me</h1>
                     <p>ชื่อ: นายอธิภัทร ธาระกิจ</p>
                     <p>ชื่อเล่น: บีม</p>
                     <p>วัน/เดือน/ปีเกิด: 8 มิถุนายน พ.ศ. 2546</p>
@@ -32,91 +45,68 @@
                     <p>เชื้อชาติ: ไทย</p>
                     <p>จุดแข็ง: มีทักษะในการแก้ไขปัญหาเฉพาะหน้าและสามารถปรับตัวเข้ากับสถานการณ์ได้ดี</p>
                     <p>จุดที่ควรพัฒนา: มักคิดมากและมีความกังวลในบางสถานการณ์</p>
-
                 </div>
 
-                <div class="projects">
-                    <h2>Projects</h2>
+                <div class="projects" data-aos="fade-up">
+                    <h1>Projects</h1>
                     <p> ปรับแต่งเสียงให้เหมาะสมกับการฟังโดยใช้ Filter Bank ผ่านโปรแกรม MATLAB</p>
                     <p> ออกแบบหน้ารายการเลือกเมนูของตู้ขายอาหารและเครื่องดื่มอัตโนมัติด้วยภาษา Java ผ่านโปรแกรม Eclipse</p>
                     <p> ออกแบบโปรแกรมคำนวณรูปทรงเรขาคณิตด้วยภาษา Assembly</p>
                     <p> สร้างวงจรสัญญาณเตือนไฟไหม้โดยใช้โปรแกรม Proteus 7</p>
                     <p> ออกแบบวงจรปลดล็อครหัสผ่านและพัฒนาโปรแกรมด้วยภาษา Assembly ผ่านโปรแกรม MPLAB และ Proteus 7</p>
-                    <p> ออกแบบเว็บไซต์สำหรับการสั่งซื้อสินค้าผ่านอินเทอร์เน็ต โดยใช้ภาษา HTML, PHP และ CSS</p>
+                    <p> ออกแบบเว็บไซต์สำหรับการสั่งซื้อสินค้าผ่านอินเทอร์เน็ต โดยใช้ภาษา HTML, PHP, CSS และ JavaScript</p>
                 </div>
 
-                <div class="skills">
-                    <h2>Skills</h2>
-                    <div class="skill">
+                <div class="skills" data-aos="fade-up">
+                    <h1>Skills</h1>
+                    <div class="skill" data-aos="fade-left">
                         <span class="skill-name">HTML</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress html"></div>
-                        </div>
+                        <div class="skill-bar"><div class="skill-progress html"></div></div>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-aos="fade-left">
                         <span class="skill-name">CSS</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress css"></div>
-                        </div>
+                        <div class="skill-bar"><div class="skill-progress css"></div></div>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-aos="fade-left">
                         <span class="skill-name">JavaScript</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress javascript"></div>
-                        </div>
+                        <div class="skill-bar"><div class="skill-progress javascript"></div></div>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-aos="fade-left">
                         <span class="skill-name">PHP</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress php"></div>
-                        </div>
+                        <div class="skill-bar"><div class="skill-progress php"></div></div>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-aos="fade-left">
                         <span class="skill-name">Python</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress python"></div>
-                        </div>
+                        <div class="skill-bar"><div class="skill-progress python"></div></div>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-aos="fade-left">
                         <span class="skill-name">Java</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress java"></div>
-                        </div>
+                        <div class="skill-bar"><div class="skill-progress java"></div></div>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-aos="fade-left">
                         <span class="skill-name">Assembly</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress assembly"></div>
-                        </div>
+                        <div class="skill-bar"><div class="skill-progress assembly"></div></div>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-aos="fade-left">
                         <span class="skill-name">Arduino</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress arduino"></div>
-                        </div>
+                        <div class="skill-bar"><div class="skill-progress arduino"></div></div>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-aos="fade-left">
                         <span class="skill-name">C and C+</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress c"></div>
-                        </div>
+                        <div class="skill-bar"><div class="skill-progress c"></div></div>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-aos="fade-left">
                         <span class="skill-name">Bootstrap</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress Bootstrap"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">php</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress php"></div>
-                        </div>
+                        <div class="skill-bar"><div class="skill-progress Bootstrap"></div></div>
                     </div>
                 </div>
-
             </div>
         </section>
-    </main>    
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
